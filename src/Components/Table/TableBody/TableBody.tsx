@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
 import { RootState } from 'store/store';
-import { cells } from 'services/cells';
+import { cells } from 'services/helpers/cells';
 import TableBodyRow from './TableBodyRow';
 import styles from './tableBody.module.scss';
 

@@ -2,7 +2,7 @@ import React, { FC, useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
 import { RootState } from 'store/store';
-import { findAvg } from 'services/findAvg';
+import { findAvg } from 'services/helpers/findAvg';
 import styles from './tableAvg.module.scss';
 
 // eslint-disable-next-line react/function-component-definition

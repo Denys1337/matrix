@@ -1,7 +1,7 @@
 import { FC, FormEvent, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { tableCreate } from 'store/tableCreateSlice';
-import { IInitialParam } from 'services/interfaces';
+import { IInitialParam } from 'services/types/interfaces';
 import styles from './StartFormStyle.module.scss';
 
 // eslint-disable-next-line react/function-component-definition
@@ -27,12 +27,12 @@ const StartForm: FC = () => {
 			<form onSubmit={submitHandler}>
 				<label htmlFor="rowsInp">
 					Enter the number of rows
-					<input ref={inputRowsRef} min={1} max={10} type="number" id="rowsInp" name="rows" required />
+					<input ref={inputRowsRef} min={1} max={100} type="number" id="rowsInp" name="rows" required />
 				</label>
 
 				<label htmlFor="columnsInp">
 					Enter the number of columns
-					<input ref={inputColumnsRef} min={1} max={10} type="number" id="columnsInp" name="columns" required />
+					<input ref={inputColumnsRef} min={1} max={100} type="number" id="columnsInp" name="columns" required />
 				</label>
 
 				<label htmlFor="cellsInp">

@@ -1,4 +1,4 @@
-import { ICell } from './interfaces';
+import { ICell } from '../types/interfaces';
 import { findSum } from './findSum';
 
 export function createPercent(arr: ICell[]): any {

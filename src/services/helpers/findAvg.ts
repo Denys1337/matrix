@@ -1,4 +1,4 @@
-import { ICell, ISimpleCell } from './interfaces';
+import { ICell, ISimpleCell } from '../types/interfaces';
 import { findSum } from './findSum';
 
 export const findAvg = (arr: ICell[][]): ISimpleCell[] => {

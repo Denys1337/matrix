@@ -1,12 +1,8 @@
-import { ICell } from './interfaces';
+import { ICell } from '../types/interfaces';
 
 export const cells = (arr, currentObj) => {
-	const cloneArr = JSON.parse(JSON.stringify(arr));
-
-	const resultArr: ICell[] = [].concat(...cloneArr);
-
+	const resultArr: ICell[] = [].concat(...arr);
 	const final = resultArr.filter(el => currentObj.key !== el.key);
-
 	const count = final.map(el => {
 		el.delta = Math.abs(el.amount - currentObj.amount);
 		return el;

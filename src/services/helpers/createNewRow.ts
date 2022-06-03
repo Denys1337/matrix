@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import { ICell, IInitNewCell } from './interfaces';
+import { ICell, IInitNewCell } from '../types/interfaces';
 import { createPercent } from './createPercent';
 
 export default function createNewRow(initialObj: IInitNewCell) {

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import tableCreator from 'services/tableCreator';
-import createNewRow from 'services/createNewRow';
-import { ICell, IInitialParam, IInitNewCell } from 'services/interfaces';
+import tableCreator from 'services/helpers/tableCreator';
+import createNewRow from 'services/helpers/createNewRow';
+import { ICell, IInitialParam, IInitNewCell } from 'services/types/interfaces';
 
 interface initialState {
 	table: ICell[][] | [];

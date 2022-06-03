@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 import cn from 'classnames';
 import { removeRow, increment } from 'store/tableCreateSlice';
 import logo from 'assets/img/removeRow.svg';
-import { findSum } from 'services/findSum';
+import { findSum } from 'services/helpers/findSum';
 import styles from './tableBody.module.scss';
 
 function TableBodyRow({ arr, rowArr, id, checkCells, hideAllCells }) {

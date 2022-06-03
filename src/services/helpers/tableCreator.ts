@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import { IInitialParam, ICell } from './interfaces';
+import { IInitialParam, ICell } from '../types/interfaces';
 import { createPercent } from './createPercent';
 
 const tableCreator = (object: IInitialParam): ICell[][] => {

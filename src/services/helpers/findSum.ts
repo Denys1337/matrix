@@ -1,4 +1,4 @@
-import { ICell, ISimpleCell } from './interfaces';
+import { ICell, ISimpleCell } from '../types/interfaces';
 
 export const findSum = (arr: ISimpleCell[] | ICell[]): number => {
 	const initialValue: number = 0;
